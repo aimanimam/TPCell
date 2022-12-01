@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>TPC@LNJPIT,Chapra</title>
+<meta charset="utf-8">
+<link href="clogo.png" rel="icon"/>
+<style>
+	body
+	{
+		background-color:#0080ff;
+	}
+	#outer
+	{
+		height: 2860px;
+		width: 1400px;
+		//border:1px solid black;
+		margin: 0px auto;
+		background-color: white;
+	}
+	#headone
+	{
+		height: 150px;
+		width: 1400px;
+		//border: 1px solid black;
+		background-color: rgb(0,0,69);
+	}
+	.one_1
+	{
+		height: 150px;
+		width:625px;
+		//border: 1px solid black;
+		background-color: rgb(0,0,69);
+		float:left;
+		font-size: 50px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		color:white;
+		
+	}
+	#one_2
+	{
+		height: 150px;
+		width:150px;
+		//border: 1px solid black;
+		background-color:white ;
+		float:left;
+		border-radius: 10px;
+	}
+	.one_3
+	{
+		height: 150px;
+		width:625px;
+		//border: 1px solid black;
+		background-color:rgb(0,0,69); 
+		float:left;
+		font-size: 50px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		color: white;
+	}
+	#space
+	{
+		height: 10px;
+		width: 1400px;
+		background-color: white;
+		//border:1px solid black;
+	}
+	#menu
+	{
+		height:60px;
+		width:1400px;
+		//border:1px solid black;
+		background-color:black;
+		padding: 1px 0px 1px 0px;
+	}
+	#menu ul
+	{
+		list-style-type:none;
+	}
+	#menu ul li
+	{
+		display:inline;
+		padding:25px;
+		font-size: 30px;
+		vertical-align: center;
+	}
+	#menu ul li a
+	{
+		color:white;
+		text-decoration:none;
+	}
+	#menu ul li a:hover
+	{
+		background-color: red;
+		//font-size:15px;
+	}
+	#gallery
+	{
+		height: 2560px;
+		width: 1400px;
+		//border:1px solid black;
+		background-color: grey;
+	}
+	#panel_1
+	{
+		height: 2560px;
+		width: 10px;
+		background-color: black;
+		float: left;
+	}
+	#panel_2
+	{
+		height: 2560px;
+		width: 1380px;
+		background-color: yellow;
+		float: left;
+	}
+	#panel_2_1
+	{
+		height: 10px;
+		width: 1380px;
+		background-color: #004080;
+	}
+	#panel_2_2
+	{
+		height: 600px;
+		width: 1380px;
+		background-color: #004080;
+	}
+	#panel_2_3
+	{
+		height: 10px;
+		width: 1380px;
+		background-color: #004080;
+	}
+	#panel_2_4
+	{
+		height: 400px;
+		width: 1380px;
+		background-color: #004080;
+	}
+	#panel_2_5
+	{
+		height: 10px;
+		width: 1380px;
+		background-color: #004080;
+	}
+	#panel_2_6
+	{
+		height: 400px;
+		width: 1380px;
+		background-color: #004080;
+	}
+	#panel_2_7
+	{
+		height: 10px;
+		width: 1380px;
+		background-color: #004080;
+	}
+	#panel_2_8
+	{
+		height: 500px;
+		width: 1380px;
+		background-color: #004080;
+	}
+	#panel_2_9
+	{
+		height: 10px;
+		width: 1380px;
+		background-color: #004080;
+	}
+	#panel_2_10
+	{
+		height: 600px;
+		width: 1380px;
+		background-color: #004080;
+	}
+	#panel_2_11
+	{
+		height: 10px;
+		width: 1380px;
+		background-color: #004080;
+	}
+	#panel_3
+	{
+		height: 2560px;
+		width: 10px;
+		background-color: #004080;
+		float: left;
+	}
+	#panel_2_4_1
+	{
+		height: 400px;
+		width: 685px;
+		float: left;
+	}
+	#panel_2_4_2
+	{
+		height: 400px;
+		width: 10px;
+		float: left;
+	}
+	#panel_2_4_3
+	{
+		height: 400px;
+		width: 685px;
+		float: left;
+	}
+	#panel_2_6_1
+	{
+		height: 400px;
+		width: 685px;
+		float: left;
+	}
+	#panel_2_6_2
+	{
+		height: 400px;
+		width: 10px;
+		float: left;
+	}
+	#panel_2_6_3
+	{
+		height: 400px;
+		width: 685px;
+		float: left;
+	}
+	#panel_2_8_1
+	{
+		height: 500px;
+		width: 685px;
+		float: left;
+	}
+	#panel_2_8_2
+	{
+		height: 500px;
+		width: 10px;
+		float: left;
+	}
+	#panel_2_8_3
+	{
+		height: 500px;
+		width: 685px;
+		float: left;
+	}
+	#footer
+	{
+		height: 80px;
+		width: 1400px;
+		background-color: pink;
+	}
+	#foot_1
+	{
+		height: 80px;
+		width: 460px;
+		float: left;
+		text-align: center;
+		font-size: 25px;
+	}
+	#foot_2
+	{
+		height: 80px;
+		width: 470px;
+		float: left;
+		font-size: 25px;
+		text-align: center;
+	}
+	#foot_3
+	{
+		height: 80px;
+		width: 460px;
+		float: left;
+		font-size: 25px;
+		text-align: center;
+	}
+	</style>
+	</head>
+	<body>
+	<div id="outer">
+		<div id="headone">
+			<div class="one_1">Training and Placement Cell</div>
+			<div id="one_2"><a href="https://www.lnjpitchapra.in/" target="_blank"><img src="clogo.png" alt="LNJPIT LOGO" height="150px" width="150px"/></a></div>
+			<div class="one_3">Loknayak Jai Prakash Intitute of Technology,Chapra</div>
+		</div>
+		<div id="space"></div>
+		<div id="menu">
+			<ul>
+				<li><a href="tpc.html" target="_blank">@TPC</a></li>
+				<li><a href="tpcstructure.html" target="_blank">TPC Structure</a></li>
+				<li><a href="regrec.html" target="_blank">Register</a></li>
+				<li><a href="login.html" target="_blank">Login</a></li>
+				<li><a href="campus.html">Campus Tour</a></li>
+				<li><a href="contact.html" target="_blank">Contact us</a></li>
+			</ul>
+		</div>
+		<div id="gallery">
+			<div id="panel_1"></div>
+			<div id="panel_2">
+				<div id="panel_2_1"></div>
+				<div id="panel_2_2">
+					<center><img src="img1.jpg" height="600px" width="1200px" style="border-radius: 150px 150px 150px 150px"></center>
+				</div>
+				<div id="panel_2_3"></div>
+				<div id="panel_2_4">
+					<div id="panel_2_4_1">
+						<img src="img2.jpg" height="400px" width="685px" style="border-radius: 200px 200px 0px 200px;">
+					</div>
+					<div id="panel_2_4_2"></div>
+					<div id="panel_2_4_3">
+						<img src="img3.jpg" height="400px" width="685px" style="border-radius: 200px 200px 200px 0px">
+					</div>
+				</div>
+				<div id="panel_2_5"></div>
+				<div id="panel_2_6">
+					<div id="panel_2_6_1">
+						<img src="img4.jpg" height="400px" width="685px" style="border-radius: 200px 0px 200px 200px">
+					</div>
+					<div id="panel_2_6_2"></div>
+					<div id="panel_2_6_3">
+						<img src="img5.jpg" height="400px" width="685px" style="border-radius: 0px 200px 200px 200px">
+					</div>
+				</div>
+				<div id="panel_2_7"></div>
+				<div id="panel_2_8">
+					<div id="panel_2_8_1">
+						<img src="img6.jpg" height="500px" width="685px" style="border-radius: 300px 300px 300px 300px">
+					</div>
+					<div id="panel_2_8_2"></div>
+					<div id="panel_2_8_3">
+						<img src="img7.jpg" height="500px" width="685px" style="border-radius: 300px 300px 300px 300px">
+					</div>
+				</div>
+				<div id="panel_2_9"></div>
+				<div id="panel_2_10">
+					<center><img src="img8.jpg" height="600px" width="1200px" style="border-radius: 150px 150px 150px 150px"></center>
+				</div>
+				<div id="panel_2_11"></div>
+			</div>
+			<div id="panel_3"></div>
+		</div>
+	<div id="footer">
+		<div id="foot_1"><br/>© 2020 Copyright LNJPIT, Chhapra</div>
+		<div id="foot_2"><br/>Designed and Developed by Aiman Imam</div>
+		<div id="foot_3"><br/><a href="contact.html">Contact us</a> | Privacy Policy</div>
+	</div>
+	</div>
+</body>
+</html>
